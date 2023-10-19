@@ -4,6 +4,7 @@ services:
 
   studio:
     image: heartexlabs/label-studio:latest
+    restart: unless-stopped
     volumes:
       - ./data:/label-studio/data
     ports:
